@@ -445,12 +445,13 @@ footer hr{
   
 }
 @media(max-width : 990px){
-  .footer-last-left input[type = "text"]{
-    width: 100px;
+  .footer-last-left input{
+    display: none;
   }
-  .footer-last-left input[type = "button"]{
-    width: 70px;
+  .ffooter-last-right{
+    width: 100%;
   }
+  
 }
 
 
