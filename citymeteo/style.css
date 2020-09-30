@@ -447,9 +447,12 @@ footer hr{
 @media(max-width : 990px){
   .footer-last-left input{
     display: none;
+  }    
   }
-  .ffooter-last-right{
+  .footer-last-right {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   
 }
