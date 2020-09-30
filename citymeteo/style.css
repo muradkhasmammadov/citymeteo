@@ -385,6 +385,7 @@ footer hr{
   height: 30px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  text-align: center;
 }
 .footer-last-left input[type = "button"]{
   width: 100px;
@@ -443,7 +444,14 @@ footer hr{
   }
   
 }
-
+@media(max-width : 990px){
+  .footer-last-left input[type = "text"]{
+    width: 100px;
+  }
+  .footer-last-left input[type = "button"]{
+    width: 70px;
+  }
+}
 
 
 
