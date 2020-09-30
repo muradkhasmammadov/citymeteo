@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="head-right">
+                <div class="hidden-head">
+                    <i class="fa fa-sun"></i>
+                    <h4>CityMeteo</h4>
+                    </div>
+                <ul>
+                    <li>NOW</li>
+                    <li>HOURLY</li>
+                    <li>DAILY</li>
+                    <li>MONTH</li>
+                </ul>
+            </div>
+            <div class="head-center">
+                <div class="head-center-inside">
+                <i class="fa fa-sun"></i>
+                <h4>CityMeteo</h4>
+                </div>
+            </div>
+            <div class="head-left">
+                <ul>
+                    <li class="login">Login</li>
+                    <button>Qeydiyyat</button>
+                        <div class="hover-login-part">
+                            <input type="text" placeholder="E-mail"><br>
+                            <input type="text" placeholder="Password"><br>
+                            <input type="button" value="Login"> 
+                        </div>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+</header>
+<div class="toggle-button">
+        <ul>
+            <li></li>
+            <li>NOW</li>
+            <li>HOURLY</li>
+            <li>DAILY</li>
+            <li>MONTH</li>
+            <li>LOGIN</li>
+        </ul>
+        <button>Qeydiyyat</button>
+</div>
+    <section class="slider container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <span>Bakı 27 &#176;</span>          
+                <img class="d-block w-100" src="https://www.stormgeo.com/assets/ArticleImages/Baku-Azerbaijan__FocusFillWzQ2MDgsMjcwMCwieSIsMTg2XQ.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <span>Quba 27 &#176;</span> 
+                <img class="d-block w-100" src="https://cf.bstatic.com/images/hotel/max1024x768/145/145384702.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <span>Lənkəran 22 &#176;</span>
+                <img class="d-block w-100" src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.135.1079.1079a/s640x640/104119152_161133415454656_3216528389083721024_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=JmIBFL750i8AX8WlIzc&oh=6db0dc366a34a55b61effe6ddac829ca&oe=5F7BF06D" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+      <div class="seherler">
+          <center><h2>ŞƏHƏRLƏR</h2></center>
+        <div class="container seherler-alt">
+            <div class="row">
+                <div class="img col-md-3 col-sm-6 mt-4">
+                    <div class="img-all">
+                    <div class="img-up">
+                        <img src="https://www.stormgeo.com/assets/ArticleImages/Baku-Azerbaijan__FocusFillWzQ2MDgsMjcwMCwieSIsMTg2XQ.jpg" alt="">
+                    </div>
+                    <div class="img-down">
+                        <span><img src="img\1.png" alt="" width="60px"></span>
+                        <span>27</span>
+                        <span>&#176;</span> 
+                        <br>
+                        <button>Bakı</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="img col-md-3 col-sm-6 mt-4">
+                    <div class="img-all">
+                    <div class="img-up">
+                        <img src="https://i1.trekearth.com/photos/114449/sumgayt.jpg" alt="" >
+                    </div>
+                    <div class="img-down">
+                        <span><img src="img\2.png" alt="" width="50px"></span>
+                        <span>25</span>
+                        <span>&#176;</span> 
+                        <br>
+                        <button>Sumqayıt</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="img col-md-3 col-sm-6 mt-4">
+                    <div class="img-all">
+                    <div class="img-up">
+                        <img src="https://cdn.trend.az/2016/05/02/trend_gence_020516_22.jpg" alt="" >
+                    </div>
+                    <div class="img-down">
+                        <span><img src="img\3.png" alt="" width="50px"></span>
+                        <span>23</span>
+                        <span>&#176;</span> 
+                        <br>
+                        <button>Gəncə</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="img col-md-3 col-sm-6 mt-4">
+                    <div class="img-all">
+                    <div class="img-up">
+                        <img src="https://aqreqator.az/img/pics/large/2020-03/338201_bw8cywsfer.jpg" alt="">
+                    </div>
+                    <div class="img-down">
+                        <span><img src="img\4.png" alt="" width="50px"></span>
+                        <span>22</span>
+                        <span>&#176;</span> 
+                        <br>
+                        <button>Mingəçevir</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="img col-md-3 col-sm-6 mt-4">
+                    <div class="img-all">
+                    <div class="img-up">
+                        <img src="https://cf.bstatic.com/images/hotel/max1024x768/145/145384702.jpg" alt="">
+                    </div>
+                    <div class="img-down">
+                        <span><img src="img\8.png" alt="" width="60px"></span>
+                        <span>27</span>
+                        <span>&#176;</span> 
+                        <br>
+                        <button>Quba</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="img col-md-3 col-sm-6 mt-4">
+                    <div class="img-all">
+                    <div class="img-up">
+                        <img src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.135.1079.1079a/s640x640/104119152_161133415454656_3216528389083721024_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=JmIBFL750i8AX8WlIzc&oh=6db0dc366a34a55b61effe6ddac829ca&oe=5F7BF06D" alt="" >
+                    </div>
+                    <div class="img-down">
+                        <span><img src="img\7.png" alt="" width="50px"></span>
+                        <span>25</span>
+                        <span>&#176;</span> 
+                        <br>
+                        <button>Lənkəran</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="img col-md-3 col-sm-6 mt-4">
+                    <div class="img-all">
+                    <div class="img-up">
+                        <img src="https://mapio.net/images-p/43491720.jpg" alt="">
+                    </div>
+                    <div class="img-down">
+                        <span><img src="img\6.png" alt="" width="60px"></span>
+                        <span>23</span>
+                        <span>&#176;</span> 
+                        <br>
+                        <button>Balakən</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="img col-md-3 col-sm-6 mt-4">
+                    <div class="img-all">
+                    <div class="img-up">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSPGwM3q4h2w-O4Xew2l5i-oTIC4WzcEPBlGA&usqp=CAU" alt="">
+                    </div>
+                    <div class="img-down">
+                        <span><img src="img\5.png" alt="" width="40px"></span>
+                        <span>22</span>
+                        <span>&#176;</span> 
+                        <br>
+                        <button>Zaqatala</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <footer>
+        <div class="footer-up container">
+            <div class="footer-up-right">
+                <i class="fa fa-sun"></i>
+                <span>CityMeteo</span>
+            </div>
+            <div class="footer-up-left">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram-square"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-down container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <ul>
+                        <li>Proven Superior Accuracy</li>
+                        <li>About AccuWeather</li>
+                        <li>Digital Advertising</li>
+                        <li>Careers</li>
+                        <li>Press</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <ul>
+                        <li>For Businees</li>
+                        <li>For Partners</li>
+                        <li>For Advertising</li>
+                        <li>AccuWeather APIs</li>
+                        <li>Podcast</li>
+                        <li>See all Apps & Downloads</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <ul>
+                        <li>AccuWeather Ready</li>
+                        <li>Business</li>
+                        <li>Health</li>
+                        <li>Hurricane</li>
+                        <li>Leisure and Recreation</li>
+                        <li>Severe Weather</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <ul>
+                        <li>Space and Astronomy</li>
+                        <li>Sports</li>
+                        <li>Travel</li>
+                        <li>Weather News</li>
+                        <li>Weather Blogs</li>
+                        <li>Winter Weathert</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-last">
+            <div class="footer-last-all container">
+                <div class="footer-last-right">
+                    <span>© 2020 CityMeteo -  Bütün hüquqlar qorunur</span>
+                </div>
+                <div class="footer-last-left">
+                    <input type="text" placeholder="E-mail">
+                    <input type="button" value="Subscribe">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
