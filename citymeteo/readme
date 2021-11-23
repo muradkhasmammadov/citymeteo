@@ -16,3 +16,17 @@ prediction = lr.predict(x_test)
 
 plt.plot(x_train, y_train, 'o')
 plt.plot(x_test, prediction)
+
+# polynomial regression
+from sklearn.preprocessing import PolynomialFeatures
+
+pr = PolynomialFeatures(degree = 2)
+
+x_train_2d = pr.fit_transform(x_train)
+x_test_2d = pr.fit_transform(x_test)
+
+lr.fit(x_train_2d, y_train)
+
+predictions = lr.predict(x_test_2d)
+
+plt.plot(y_test, predictions)
