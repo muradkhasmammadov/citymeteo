@@ -1,0 +1,44 @@
+{
+    "images": [
+        {
+          "cityId": "Baku",
+          "imgSrc": "img/baku.jpg",
+          "altText": "Image 1 Alt Text"
+        },
+          {
+            "cityId": "Paris",
+            "imgSrc": "img/paris.jpg",
+            "altText": "Image 1 Alt Text"
+          },
+          {
+            "cityId": "Tallinn",
+            "imgSrc": "img/tallinn.jpg",
+            "altText": "Image 1 Alt Text"
+          },
+          {
+            "cityId": "Berlin",
+            "imgSrc": "img/berlin.jpg",
+            "altText": "Image 1 Alt Text"
+          },
+          {
+            "cityId": "Riga",
+            "imgSrc": "img/riga.jpg",
+            "altText": "Image 1 Alt Text"
+          },
+          {
+            "cityId": "Helsinki",
+            "imgSrc": "img/helsinki.jpg",
+            "altText": "Image 1 Alt Text"
+          },
+          {
+            "cityId": "Milan",
+            "imgSrc": "img/milan.jpg",
+            "altText": "Image 1 Alt Text"
+          },
+          {
+            "cityId": "Madrid",
+            "imgSrc": "img/madrid.jpg",
+            "altText": "Image 1 Alt Text"
+          }
+      ]
+}

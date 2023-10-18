@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <meta name="description" content="CityMeteo - Your Weather Guide">
+    <meta name="keywords" content="weather, forecast, city, temperature">
+    <title>CityMeteo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -70,16 +72,16 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <span>Bakı 27 &#176;</span>          
-                <img class="d-block w-100" src="https://www.stormgeo.com/assets/ArticleImages/Baku-Azerbaijan__FocusFillWzQ2MDgsMjcwMCwieSIsMTg2XQ.jpg" alt="First slide">
+                <span id="carousel-Baku"></span>          
+                <img class="d-block w-100" src="img/baku.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <span>Quba 27 &#176;</span> 
-                <img class="d-block w-100" src="https://cf.bstatic.com/images/hotel/max1024x768/145/145384702.jpg" alt="Second slide">
+                <span id="carousel-Paris"></span>          
+                <img class="d-block w-100" src="img/paris2.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <span>Lənkəran 22 &#176;</span>
-                <img class="d-block w-100" src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.135.1079.1079a/s640x640/104119152_161133415454656_3216528389083721024_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=JmIBFL750i8AX8WlIzc&oh=6db0dc366a34a55b61effe6ddac829ca&oe=5F7BF06D" alt="Third slide">
+                <span id="carousel-Tallinn"></span>          
+               <img class="d-block w-100" src="img/tallinn.jpg " alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -98,113 +100,97 @@
             <div class="row">
                 <div class="img col-md-3 col-sm-6 mt-4">
                     <div class="img-all">
-                    <div class="img-up">
-                        <img src="https://www.stormgeo.com/assets/ArticleImages/Baku-Azerbaijan__FocusFillWzQ2MDgsMjcwMCwieSIsMTg2XQ.jpg" alt="">
+                    <div class="img-up" id="Baku-img">
                     </div>
                     <div class="img-down">
                         <span><img src="img\1.png" alt="" width="60px"></span>
-                        <span>27</span>
-                        <span>&#176;</span> 
+                        <span id="Baku-temperature"></span>
                         <br>
-                        <button>Bakı</button>
+                        <button id="Baku"></button>
                     </div>
                     </div>
                 </div>
                 <div class="img col-md-3 col-sm-6 mt-4">
                     <div class="img-all">
-                    <div class="img-up">
-                        <img src="https://i1.trekearth.com/photos/114449/sumgayt.jpg" alt="" >
+                    <div class="img-up" id="Paris-img">
                     </div>
                     <div class="img-down">
                         <span><img src="img\2.png" alt="" width="50px"></span>
-                        <span>25</span>
-                        <span>&#176;</span> 
+                        <span id="Paris-temperature"></span>
                         <br>
-                        <button>Sumqayıt</button>
+                        <button id="Paris"></button>
                     </div>
                     </div>
                 </div>
                 <div class="img col-md-3 col-sm-6 mt-4">
                     <div class="img-all">
-                    <div class="img-up">
-                        <img src="https://cdn.trend.az/2016/05/02/trend_gence_020516_22.jpg" alt="" >
+                    <div class="img-up" id="Tallinn-img">
                     </div>
                     <div class="img-down">
                         <span><img src="img\3.png" alt="" width="50px"></span>
-                        <span>23</span>
-                        <span>&#176;</span> 
+                        <span id="Tallinn-temperature"></span>
                         <br>
-                        <button>Gəncə</button>
+                        <button id="Tallinn"></button>
                     </div>
                     </div>
                 </div>
                 <div class="img col-md-3 col-sm-6 mt-4">
                     <div class="img-all">
-                    <div class="img-up">
-                        <img src="https://aqreqator.az/img/pics/large/2020-03/338201_bw8cywsfer.jpg" alt="">
+                    <div class="img-up" id="Berlin-img">
                     </div>
                     <div class="img-down">
                         <span><img src="img\4.png" alt="" width="50px"></span>
-                        <span>22</span>
-                        <span>&#176;</span> 
+                        <span id="Berlin-temperature"></span>
                         <br>
-                        <button>Mingəçevir</button>
+                        <button id="Berlin"></button>
                     </div>
                     </div>
                 </div>
                 <div class="img col-md-3 col-sm-6 mt-4">
                     <div class="img-all">
-                    <div class="img-up">
-                        <img src="https://cf.bstatic.com/images/hotel/max1024x768/145/145384702.jpg" alt="">
+                    <div id="Riga-img" class="img-up">
                     </div>
                     <div class="img-down">
                         <span><img src="img\8.png" alt="" width="60px"></span>
-                        <span>27</span>
-                        <span>&#176;</span> 
+                        <span id="Riga-temperature"></span>
                         <br>
-                        <button>Quba</button>
+                        <button id="Riga"></button>
                     </div>
                     </div>
                 </div>
                 <div class="img col-md-3 col-sm-6 mt-4">
                     <div class="img-all">
-                    <div class="img-up">
-                        <img src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.135.1079.1079a/s640x640/104119152_161133415454656_3216528389083721024_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=JmIBFL750i8AX8WlIzc&oh=6db0dc366a34a55b61effe6ddac829ca&oe=5F7BF06D" alt="" >
+                    <div class="img-up" id="Helsinki-img">
                     </div>
                     <div class="img-down">
                         <span><img src="img\7.png" alt="" width="50px"></span>
-                        <span>25</span>
-                        <span>&#176;</span> 
+                        <span id="Helsinki-temperature"></span>
                         <br>
-                        <button>Lənkəran</button>
+                        <button id="Helsinki"></button>
                     </div>
                     </div>
                 </div>
                 <div class="img col-md-3 col-sm-6 mt-4">
                     <div class="img-all">
-                    <div class="img-up">
-                        <img src="https://mapio.net/images-p/43491720.jpg" alt="">
+                    <div class="img-up" id="Milan-img">
                     </div>
                     <div class="img-down">
                         <span><img src="img\6.png" alt="" width="60px"></span>
-                        <span>23</span>
-                        <span>&#176;</span> 
+                        <span id="Milan-temperature"></span>
                         <br>
-                        <button>Balakən</button>
+                        <button id="Milan"></button>
                     </div>
                     </div>
                 </div>
                 <div class="img col-md-3 col-sm-6 mt-4">
                     <div class="img-all">
-                    <div class="img-up">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSPGwM3q4h2w-O4Xew2l5i-oTIC4WzcEPBlGA&usqp=CAU" alt="">
+                    <div class="img-up"  id="Madrid-img">
                     </div>
                     <div class="img-down">
                         <span><img src="img\5.png" alt="" width="40px"></span>
-                        <span>22</span>
-                        <span>&#176;</span> 
+                        <span id="Madrid-temperature"></span>
                         <br>
-                        <button>Zaqatala</button>
+                        <button id="Madrid"></button>
                     </div>
                     </div>
                 </div>
